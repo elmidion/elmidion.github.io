@@ -13,18 +13,16 @@
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header
-				<li><a href="#" onclick="loadContent('AIdigest/NM/Nuclear_Medicine_and_Molecular_Imaging_20230619_20230625.html')">2023/06/19 - 2023/06/25</a></li>
-				<!--section id="header" class="wrapper">
-
-					<!-- Logo -->
+			<!-- Header-->
+				
+				<section id="header" class="wrapper">
+					<!--Logo-->					
 						<div id="logo">
 							<h1><a href="index.html">MAITEC.Lab</a></h1>
 							<p>전남대학교병원 핵의학과 의료인공지능 연구실</p>
 						</div>
 
-					<!-- Nav -->
+					<!--Nav-->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
@@ -37,7 +35,8 @@
 								<li>
 									<a href="#">ChatGPT</a>
 									<ul>
-										<li><a href="IDEA_prompt.html">IDEA Prompt</a></li>
+										<li><a href="#" onclick="loadMain('IDEA_prompt.html')">IDEA Prompt</a></li>										
+										<!-- <li><a href="IDEA_prompt.html">IDEA Prompt</a></li> -->
 										<li><a href="Prompts_for_draft.html">Prompts for draft</a></li>
 									</ul>
 								</li>
@@ -71,25 +70,28 @@
 							</ul>
 						</nav>
 
-				</section>-->
-
-			<!-- Intro -->
-				<section id="intro" class="wrapper style1">
-					<div class="title">Home</div>
-					<div class="container">
-						<p class="style1">Medical Artificial Intelligence Technology Laboratory</p>
-						<!-- <p class="style2">
-							Escape Velocity is a free responsive<br class="mobile-hide" />
-							site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
-						</p>
-						<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-						free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-						your personal or commercial projects &ndash; just be sure to credit us!</p>
-						<ul class="actions">
-							<li><a href="#" class="button style3 large">Proceed</a></li>
-						</ul> -->
-					</div>
 				</section>
+
+			<!-- Main -->
+				<div id="main">
+					<!-- Content will be loaded here -->
+					<section id="intro" class="wrapper style1">
+						<div class="title">Home</div>
+						<div class="container">
+							<p class="style1">Medical Artificial Intelligence Technology Laboratory</p>
+							<!-- <p class="style2">
+								Escape Velocity is a free responsive<br class="mobile-hide" />
+								site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+							</p>
+							<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
+							free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
+							your personal or commercial projects &ndash; just be sure to credit us!</p>
+							<ul class="actions">
+								<li><a href="#" class="button style3 large">Proceed</a></li>
+							</ul> -->
+						</div>
+					</section>
+				</div>
 
 			<!-- Main
 				<section id="main" class="wrapper style2">
@@ -299,11 +301,11 @@
 
 		<!-- JavaScript to load content -->
 			<script>
-				function loadContent(pageUrl) {
+				function loadMain(pageUrl) {
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
-					document.getElementById("content").innerHTML = this.responseText;
+					document.getElementById("main").innerHTML = this.responseText;
 					}
 				};
 				xhttp.open("GET", pageUrl, true);
