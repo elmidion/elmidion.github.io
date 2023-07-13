@@ -30,9 +30,10 @@
 				<div id="main">
 					<!-- Content will be loaded here -->
 					<section id="intro" class="wrapper style1">
-						<div class="title">Home try2</div>
+						<div class="title">Home</div>
 						<div class="container">
 							<p class="style1">Medical Artificial Intelligence Technology Laboratory</p>
+							<p>getScrip All scrpit no orders</p>
 							<!-- <p class="style2">
 								Escape Velocity is a free responsive<br class="mobile-hide" />
 								site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
@@ -65,6 +66,11 @@
 					$("#logo").load("logo.html"); 
 					$("#nav").load("nav.html", function() {
 						// Load dropotron after the nav
+						$.getScript("assets/js/jquery.min.js");
+						$.getScript("assets/js/jquery.dropotron.min.js");
+						$.getScript("assets/js/browser.min.js");
+						$.getScript("assets/js/breakpoints.min.js");
+						$.getScript("assets/js/util.js");
 						$.getScript("assets/js/main.js");
 					}); 
 				});
