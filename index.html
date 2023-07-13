@@ -10,15 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -38,7 +30,7 @@
 				<div id="main">
 					<!-- Content will be loaded here -->
 					<section id="intro" class="wrapper style1">
-						<div class="title">Home try1</div>
+						<div class="title">Home try2</div>
 						<div class="container">
 							<p class="style1">Medical Artificial Intelligence Technology Laboratory</p>
 							<!-- <p class="style2">
@@ -56,17 +48,41 @@
 				</div>
 		</div>
 
+				
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>	
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>	
 
+			
 
 		<!-- JavaScript to load content -->
 			<script>
 				$(function(){
-				$("#logo").load("logo.html"); 
-				});
-				$(function(){
-				$("#nav").load("nav.html"); 
+					$("#logo").load("logo.html"); 
+					$("#nav").load("nav.html", function() {
+						// Load dropotron after the nav
+						$.getScript("assets/js/jquery.dropotron.min.js");
+					}); 
 				});
 			</script>
 
 	</body>
 </html>
+
+<!--
+
+
+			
+			
+
+
+
+
+
+
+			
+-->
