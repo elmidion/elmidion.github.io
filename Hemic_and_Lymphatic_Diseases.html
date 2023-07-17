@@ -271,5 +271,13 @@
 				xhttp.send();
 				}
   </script>
+    <script>
+    window.onload = function() {
+        var content = window.location.hash.substring(1); // "#" 뒤의 문자열을 가져옵니다.
+        if (content) {
+            loadContent(content);
+        }
+    }
+    </script>
  </body>
 </html>
