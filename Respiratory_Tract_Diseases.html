@@ -155,11 +155,11 @@
           Immune System Diseases
          </a>
         </li>
-        <li>
+        <!--li>
          <a href="Disorders_of_Environmental_Origin.html">
           Disorders of Environmental Origin
          </a>
-        </li>
+        </li-->
         <li>
          <a href="Occupational_Diseases.html">
           Occupational Diseases
@@ -214,6 +214,11 @@
           </h2>
          </header>
          <ul id="periods">
+          <li>
+           <a href="#" onclick="loadContent('AIdigest/PD/Respiratory_Tract_Diseases_20230710_20230716.html')">
+            2023/07/10 - 2023/07/16
+           </a>
+          </li>
           <li>
            <a href="#" onclick="loadContent('AIdigest/PD/Respiratory_Tract_Diseases_20230703_20230709.html')">
             2023/07/03 - 2023/07/09
@@ -271,13 +276,13 @@
 				xhttp.send();
 				}
   </script>
-    <script>
-    window.onload = function() {
+  <script>
+   window.onload = function() {
         var content = window.location.hash.substring(1); // "#" 뒤의 문자열을 가져옵니다.
         if (content) {
             loadContent(content);
         }
     }
-    </script>
+  </script>
  </body>
 </html>
