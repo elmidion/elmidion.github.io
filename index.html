@@ -22,7 +22,7 @@
 						<div id="logo"></div>
 
 					<!--Nav-->
-						{% include nav.html %}
+						<div id="nav-placeholder"></div>
 						<!--nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
@@ -105,6 +105,11 @@
 		<script>
 			$(document).ready(function(){
 				$("#logo").load("logo.html"); 
+			});
+		</script>
+		<script>
+			$(function(){
+			  $("#nav-placeholder").load("nav.html");
 			});
 		</script>
 
