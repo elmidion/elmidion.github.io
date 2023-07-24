@@ -109,13 +109,18 @@
 		<script>
 			$(document).ready(function(){
 			  $("#nav-placeholder").load("nav.html", function() {
-				$.getScript("assets/js/jquery.min.js");
-				$.getScript("assets/js/jquery.dropotron.min.js");				
-				$.getScript("assets/js/browser.min.js");				
-				$.getScript("assets/js/breakpoints.min.js");
-				$.getScript("assets/js/util.js");
-				$.getScript("assets/js/main.js");
-			  });
+				$.getScript("assets/js/jquery.min.js", function() {
+					$.getScript("assets/js/jquery.dropotron.min.js", function() {
+						$.getScript("assets/js/browser.min.js", function() {
+							$.getScript("assets/js/breakpoints.min.js", function() {
+								$.getScript("assets/js/util.js", function() {
+									$.getScript("assets/js/main.js");
+									});
+								});
+							});						
+						});				
+					});
+			  	});
 			});
 		</script>
 
