@@ -109,7 +109,11 @@
 		<script>
 		$(document).ready(function(){
 			$("#nav-placeholder").load("nav.html", function() {
-				dropotron();
+				$('#nav > ul').dropotron({
+					offsetY: -15,
+					mode: 'fade',
+					alignment: 'left'
+				});
 			});
 		});
 		</script>
