@@ -253,19 +253,32 @@
     </div>
    </section>
   </div>
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js">
-  </script>
-  <script src="assets/js/jquery.dropotron.min.js">
-  </script>
-  <script src="assets/js/browser.min.js">
-  </script>
-  <script src="assets/js/breakpoints.min.js">
-  </script>
-  <script src="assets/js/util.js">
-  </script>
-  <script src="assets/js/main.js">
-  </script>
+  
+    <!-- JavaScript to load content -->
+    <script>
+        $(document).ready(function(){
+            $("#logo").load("logo.html"); 
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#nav-placeholder").load("nav.html", function() {
+            $.getScript("assets/js/jquery.min.js", function() {
+                $.getScript("assets/js/jquery.dropotron.min.js", function() {
+                    $.getScript("assets/js/browser.min.js", function() {
+                        $.getScript("assets/js/breakpoints.min.js", function() {
+                            $.getScript("assets/js/util.js", function() {
+                                $.getScript("assets/js/main.js");
+                                });
+                            });
+                        });						
+                    });				
+                });
+            });
+        });
+    </script>
+
   <!-- <script src="assets/js/loadContent.js"></script> -->
   <!-- JavaScript to load content -->
   <script>
