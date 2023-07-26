@@ -13,21 +13,28 @@
   <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
   <link href="assets/css/main.css" rel="stylesheet"/>
   <!-- Scripts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.dropotron.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>	
-</head>
-<body class="left-sidebar is-preload">
-<div id="page-wrapper">
- <!-- Header -->
- <section class="wrapper" id="header">
-  <!-- Logo -->    
-  <div id="logo">
-   <!--h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="assets/js/jquery.min.js">
+  </script>
+  <script src="assets/js/jquery.dropotron.min.js">
+  </script>
+  <script src="assets/js/browser.min.js">
+  </script>
+  <script src="assets/js/breakpoints.min.js">
+  </script>
+  <script src="assets/js/util.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+ </head>
+ <body class="left-sidebar is-preload">
+  <div id="page-wrapper">
+   <!-- Header -->
+   <section class="wrapper" id="header">
+    <!-- Logo -->
+    <div id="logo">
+     <!--h1>
     <a href="index.html">
      MAITEC.Lab
     </a>
@@ -35,10 +42,11 @@
    <p>
     전남대학교병원 핵의학과 의료인공지능 연구실
    </p-->
-  </div>
-  <!-- Nav -->
-  <div id="nav-placeholder"></div>
-  <!--nav id="nav">
+    </div>
+    <!-- Nav -->
+    <div id="nav-placeholder">
+    </div>
+    <!--nav id="nav">
    <ul>
     <li class="current">
      <a href="index.html">
@@ -188,7 +196,7 @@
     </li>
    </ul>
   </nav-->
-</section>
+   </section>
    <!-- Main -->
    <section class="wrapper style2" id="main">
     <div class="title">
@@ -218,6 +226,11 @@
           </h2>
          </header>
          <ul id="periods">
+          <li>
+           <a href="#" onclick="loadContent('AIdigest/CHNDA/Congenital_Hereditary_and_Neonatal_Diseases_and_Abnormalities_20230717_20230723.html')">
+            2023/07/17 - 2023/07/23
+           </a>
+          </li>
           <li>
            <a href="#" onclick="loadContent('AIdigest/CHNDA/Congenital_Hereditary_and_Neonatal_Diseases_and_Abnormalities_20230710_20230716.html')">
             2023/07/10 - 2023/07/16
@@ -253,15 +266,14 @@
     </div>
    </section>
   </div>
-    <!-- JavaScript to load content -->
-    <script>
-        $(document).ready(function(){
+  <!-- JavaScript to load content -->
+  <script>
+   $(document).ready(function(){
             $("#logo").load("logo.html"); 
         });
-    </script>
-
-    <script>
-        $(document).ready(function(){
+  </script>
+  <script>
+   $(document).ready(function(){
             $("#nav-placeholder").load("nav.html", function() {
             $.getScript("assets/js/jquery.min.js", function() {
                 $.getScript("assets/js/jquery.dropotron.min.js", function() {
@@ -276,7 +288,7 @@
                 });
             });
         });
-    </script>
+  </script>
   <!-- <script src="assets/js/loadContent.js"></script> -->
   <!-- JavaScript to load content -->
   <script>
