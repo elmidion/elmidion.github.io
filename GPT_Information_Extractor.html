@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MAITEC - Projects - GPT Information Extractor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header 로드 -->
+        <div id="header-placeholder"></div>
+
+        <!-- Main Content -->
+        <div id="main" class="wrapper style2">
+            <div class="title">Projects</div>
+            <div class="container">
+                <div id="content">
+                    <article class="box post">
+                        <header class="style1">
+                            <h2>GPT Information Extractor</h2>
+                            <p>문서에서 자동으로 정보를 추출하는 AI 기반 툴</p>
+                        </header>
+                        <hr>
+
+                        <h3>📌 프로젝트 개요</h3>
+                        <p>
+                            <b>GPT Information Extractor</b>는 문서에서 자동으로 정보를 추출하여 사용자가 원하는 데이터만 필터링할 수 있도록 돕는 <b>AI 기반 애플리케이션</b>입니다.<br>
+                            <b>Streamlit</b>을 기반으로 제작되었으며, 누구나 쉽게 사용할 수 있습니다.
+                        </p>
+
+                        <h3>🔗 웹 애플리케이션 접속</h3>
+                        <p>
+                            아래 링크를 클릭하면 직접 사용해 볼 수 있습니다.<br>
+                            <a href="https://information-extractor.streamlit.app/" target="_blank" class="button">Information Extractor 사용하기</a>
+                        </p>
+
+                        <h3>🔗 GitHub 저장소</h3>
+                        <p>
+                            소스 코드 및 프로젝트 상세 정보는 아래 GitHub 링크에서 확인할 수 있습니다.<br>
+                            <a href="https://github.com/elmidion/GPT_Information_Extractor?tab=readme-ov-file" target="_blank" class="button">GitHub Repository</a>
+                        </p>
+
+                        <h3>📌 주요 기능</h3>
+                        <ul>
+                            <li><b>GPT 모델 선택:</b> 다양한 GPT 모델 사용 가능 (gpt-3.5-turbo 등)</li>
+                            <li><b>텍스트 분석:</b> 업로드된 문서에서 주요 정보를 추출</li>
+                            <li><b>자동 태깅:</b> 키워드를 자동 감지하여 분류</li>
+                            <li><b>엑셀 파일 지원:</b> 문서 내 데이터를 필터링하고, 특정 정보를 추출하여 엑셀로 제공</li>
+                            <li><b>UI 간편성:</b> Streamlit을 이용한 직관적인 인터페이스 제공</li>
+                        </ul>
+
+                        <h3>📌 사용 방법</h3>
+                        <ol>
+                            <li>위의 <b>"Information Extractor 사용하기"</b> 버튼을 클릭하여 웹 애플리케이션에 접속</li>
+                            <li>GPT API Key 입력</li>
+                            <li>GPT 모델 선택 (예: gpt-3.5-turbo)</li>
+                            <li>프롬프트 문서 (.docx) 및 데이터 엑셀 파일 (.xlsx) 업로드</li>
+                            <li>추출할 데이터 컬럼 선택 후 실행</li>
+                            <li>결과 확인 및 다운로드 (필요한 경우)</li>
+                        </ol>
+
+                        <h3>📌 예제 스크린샷</h3>
+                        <p>아래 이미지는 실제 애플리케이션 실행 화면 예제입니다.</p>
+                        <a href="images/information_extractor_example.png" class="image featured">
+                            <img src="images/information_extractor_example.png" alt="Information Extractor 예제" />
+                        </a>
+
+                        <h3>📩 문의 및 피드백</h3>
+                        <p>
+                            - 프로젝트에 대한 피드백이나 개선 아이디어가 있다면 언제든지 <a href="mailto:MAITEC.Lab@gmail.com">MAITEC.Lab@gmail.com</a>으로 연락 주세요!<br>
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer 로드 -->
+        <div id="footer-placeholder"></div>
+
+    </div>
+
+    <!-- JavaScript to Load Header & Footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+</html>
